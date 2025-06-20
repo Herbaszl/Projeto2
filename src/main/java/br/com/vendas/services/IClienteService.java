@@ -1,14 +1,15 @@
 package br.com.vendas.services;
+
 import br.com.vendas.domain.Cliente;
+import br.com.vendas.exceptions.DAOException;
 import br.com.vendas.exceptions.TipoChaveNaoEncontradaException;
-public interface IClienteService {
+import br.com.vendas.dao.generics.IGenericService;
 
-	Boolean salvar(Cliente cliente) throws TipoChaveNaoEncontradaException;
+public interface IClienteService extends IGenericService<Cliente, Long> {
 
-	Cliente buscarPorCpf(Long cpf);
 
-	void excluir(Long cpf);
+		Cliente buscarPorCPF(Long cpf) throws DAOException;
 
-	void alterar(Cliente cliente) throws TipoChaveNaoEncontradaException;
+	
 
 }

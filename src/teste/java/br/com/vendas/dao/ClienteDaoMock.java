@@ -7,6 +7,7 @@ import br.com.vendas.exceptions.TipoChaveNaoEncontradaException;
 
 public class ClienteDaoMock implements IClienteDAO{
 
+
 	@Override
 	public Boolean cadastrar(Cliente entity) throws TipoChaveNaoEncontradaException {
 		// TODO Auto-generated method stub
@@ -28,7 +29,7 @@ public class ClienteDaoMock implements IClienteDAO{
 	@Override
 	public Cliente consultar(Long valor) {
 		Cliente cliente = new Cliente();
-		cliente.setCpf(valor);;
+		cliente.setCpf(valor);
 		return cliente;
 	}
 
@@ -37,5 +38,4 @@ public class ClienteDaoMock implements IClienteDAO{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 }

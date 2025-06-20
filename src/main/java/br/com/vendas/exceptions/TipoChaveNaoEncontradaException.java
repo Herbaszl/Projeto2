@@ -1,6 +1,7 @@
 package br.com.vendas.exceptions;
 
 
+@SuppressWarnings("serial")
 public class TipoChaveNaoEncontradaException extends Exception {
 
     public TipoChaveNaoEncontradaException(String msg) {

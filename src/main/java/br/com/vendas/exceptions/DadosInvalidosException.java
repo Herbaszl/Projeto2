@@ -1,6 +1,7 @@
 package br.com.vendas.exceptions;
 
 
+@SuppressWarnings("serial")
 public class DadosInvalidosException extends Exception {
 
     public DadosInvalidosException(String msg) {

@@ -7,14 +7,4 @@ public interface IClienteDAO extends IGenericDAO<Cliente, Long>{
 
 
 
-//	boolean salvar(Cliente cliente);
-//	
-//	Cliente buscarPorCpf(Long cpf);
-//
-//
-//	void excluir(Long cpf);
-//
-//	void alterar(Cliente cliente);
-
-
 }
